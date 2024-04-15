@@ -1,0 +1,35 @@
+--example config
+getgenv().settings = {
+--majority inventory items
+    {
+        item = "Comet",
+        maxPrice = 1000,
+        class = "Misc",
+    },
+--seed
+    {
+        item = "Diamond",
+        maxPrice = 17000,
+        class = "Seed",
+    },
+--pet
+    {
+        item = "FrostByte Husky",
+        maxPrice = 100,
+        class = "Pet",
+    },
+--items with tiers, like potions, books, etc
+    {
+        item = "Damage",
+        maxPrice = 1000,
+        class = "Potion",
+        tier = 5,
+    },
+
+}
+
+--mostly every item is under Misc class
+
+getgenv().webhook = "webhooklinkhere" -- put your webhook link here for notifications
+script_key="inputscriptkeyhere"; -- put the key you get from #script-here
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/fb2430277ea12a4fbea278cf8a4b3f49.lua"))()
